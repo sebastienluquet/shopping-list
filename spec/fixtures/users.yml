@@ -1,0 +1,57 @@
+# Users table
+
+admin:
+  id: 1
+  email: admin@example.com
+  encrypted_password: $2a$10$UuFyf02kxENQ/JPk8pIV.OeONBDML9MRmIxjgRENULSvnQq7upklq
+  created_at: 2012-11-27 00:00:00
+  updated_at: 2012-11-27 00:00:00
+
+molly:
+  id: 2
+  email: molly@example.com
+  encrypted_password: $2a$10$UuFyf02kxENQ/JPk8pIV.OeONBDML9MRmIxjgRENULSvnQq7upklq
+  created_at: 2012-11-27 00:00:00
+  updated_at: 2012-11-27 00:00:00
+
+guest:
+  id: 3
+  email: guest@example.com
+  encrypted_password: $2a$10$UuFyf02kxENQ/JPk8pIV.OeONBDML9MRmIxjgRENULSvnQq7upklq
+  created_at: 2012-11-27 00:00:00
+  updated_at: 2012-11-27 00:00:00
+
+fred:
+  id: 4
+  email: fred@example.com
+  encrypted_password: $2a$10$UuFyf02kxENQ/JPk8pIV.OeONBDML9MRmIxjgRENULSvnQq7upklq
+  created_at: 2012-11-27 00:00:00
+  updated_at: 2012-11-27 00:00:00
+
+felix:
+  id: 5
+  email: felix@example.com
+  encrypted_password: $2a$10$UuFyf02kxENQ/JPk8pIV.OeONBDML9MRmIxjgRENULSvnQq7upklq
+  created_at: 2012-11-27 00:00:00
+  updated_at: 2012-11-27 00:00:00
+
+suzy:
+  id: 6
+  email: suzy@example.com
+  encrypted_password: $2a$10$UuFyf02kxENQ/JPk8pIV.OeONBDML9MRmIxjgRENULSvnQq7upklq
+  created_at: 2012-11-27 00:00:00
+  updated_at: 2012-11-27 00:00:00
+
+jane:
+  id: 7
+  email: jane@example.com
+  encrypted_password: $2a$10$UuFyf02kxENQ/JPk8pIV.OeONBDML9MRmIxjgRENULSvnQq7upklq
+  created_at: 2012-11-27 00:00:00
+  updated_at: 2012-11-27 00:00:00
+
+darcy:
+  id: 8
+  email: darcy@example.com
+  encrypted_password: $2a$10$UuFyf02kxENQ/JPk8pIV.OeONBDML9MRmIxjgRENULSvnQq7upklq
+  created_at: 2012-11-27 00:00:00
+  updated_at: 2012-11-27 00:00:00

@@ -4,31 +4,31 @@ describe ListsController do
   describe "routing" do
 
     it "routes to #index" do
-      get("account/lists").should route_to("lists#index")
+      get("/account/lists").should route_to("account/lists#index")
     end
 
     it "routes to #new" do
-      get("/lists/new").should route_to("lists#new")
+      get("/account/lists/new").should route_to("account/lists#new")
     end
 
     it "routes to #show" do
-      get("/lists/1").should route_to("lists#show", :id => "1")
+      get("/account/lists/1").should route_to("account/lists#show", :id => "1")
     end
 
     it "routes to #edit" do
-      get("/lists/1/edit").should route_to("lists#edit", :id => "1")
+      get("/account/lists/1/edit").should route_to("account/lists#edit", :id => "1")
     end
 
     it "routes to #create" do
-      post("/lists").should route_to("lists#create")
+      post("/account/lists").should route_to("account/lists#create")
     end
 
     it "routes to #update" do
-      put("/lists/1").should route_to("lists#update", :id => "1")
+      put("/account/lists/1").should route_to("account/lists#update", :id => "1")
     end
 
     it "routes to #destroy" do
-      delete("/lists/1").should route_to("lists#destroy", :id => "1")
+      delete("/account/lists/1").should route_to("account/lists#destroy", :id => "1")
     end
 
   end
