@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
+  resources :products, :only => [ :index ]
+
   resources :lists, :only => [ :show ]
 
   namespace :account do
-    resources :lists
+    resources :lists do
+      resources :items, :only => [ :create ]
+    end
   end
 
   devise_for :users
