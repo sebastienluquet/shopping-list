@@ -4,6 +4,18 @@
   <strong>Name:</strong>
   <%= @list.name %>
 </p>
+<p>
+  <strong>Products:</strong>
+  <ul>
+    <% @list.products.each do |product|%>
+    <li>
+      <%= product.name %>
+    </li>
+    <% end %>
+  </ul>
+</p>
 
+<% if begin_of_association_chain == current_user %>
 <%= link_to 'Edit', edit_resource_path(@list) %> |
 <%= link_to 'Back', collection_path %>
+<% end %>

@@ -6,4 +6,6 @@ class ListsController < ApplicationController
     params.permit(:list => [:name])
   end
 
+  helper_method :begin_of_association_chain
+
 end
