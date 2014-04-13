@@ -5,5 +5,8 @@ class CreateProducts < ActiveRecord::Migration
 
       t.timestamps
     end
+    5.times.each do |i|
+      Product.create :name => "Product#{i}"
+    end
   end
 end
