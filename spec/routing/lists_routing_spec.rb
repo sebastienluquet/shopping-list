@@ -4,7 +4,7 @@ describe ListsController do
   describe "routing" do
 
     it "routes to #index" do
-      get("/lists").should route_to("lists#index")
+      get("account/lists").should route_to("lists#index")
     end
 
     it "routes to #new" do

@@ -1,6 +1,6 @@
 class ListsController < ApplicationController
-#  before_action :authenticate_user!
   inherit_resources
+  belongs_to :user, :optional => true
 
   def permitted_params
     params.permit(:list => [:name])

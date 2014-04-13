@@ -11,7 +11,7 @@ describe "lists/edit" do
     render
 
     # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "form[action=?][method=?]", list_path(@list), "post" do
+    assert_select "form[action=?][method=?]", account_list_path(@list), "post" do
       assert_select "input#list_name[name=?]", "list[name]"
     end
   end

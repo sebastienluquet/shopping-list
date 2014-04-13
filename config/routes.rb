@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :lists
+  resources :lists, :only => [ :show ]
+
+  namespace :account do
+    resources :lists
+  end
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
@@ -7,7 +11,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root 'lists#index'
+  root 'account/lists#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
