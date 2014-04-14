@@ -12,7 +12,9 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
+        <% if current_user %>
         <td><%= link_to 'Add', account_list_items_path(current_list, :item => { :product_id => product.id }), method: :post %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
